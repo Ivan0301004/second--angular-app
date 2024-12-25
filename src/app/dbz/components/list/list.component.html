@@ -1,0 +1,13 @@
+<div class="container-list">
+  <ul class="list-group" data-bs-theme="dark">
+    <h6>{{ totalElements }}</h6>
+    <li
+      *ngFor="let character of listDbz; index as i; even as isEven"
+      class="list-group-item d-flex justify-content-between align-items-center"
+      [ngClass]="{ 'list-group-item-light': isEven }"
+    >
+      <div>{{ i + 1 }}.- {{ character.name | titlecase }} - {{ character.power }}</div>
+      <button (click)="onDeleteCharacter(character.id)" class="btn btn-danger ms-10">X</button>
+    </li>
+  </ul>
+</div>

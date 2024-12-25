@@ -1,0 +1,31 @@
+.add-form{
+  padding: 30px;
+  border: 1px solid #0ea5e9;
+  border-radius: .7rem;
+  width: 300px;
+}
+
+.form-dbz {
+  display: flex;
+  flex-direction: column;
+  /* width: 300px; */
+  row-gap: 10px;
+  /* & .btn-sub button{
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: none;
+    border-radius: 1rem;
+    padding: 5px;
+    font-size: .8rem;
+    font-weight: 700;
+  } */
+
+  & .form-label {
+    font-weight: 600;
+  }
+
+  & h3 {
+    font-weight: 600;
+  }
+}

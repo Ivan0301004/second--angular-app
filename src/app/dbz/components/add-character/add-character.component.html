@@ -1,0 +1,14 @@
+<div class="add-form">
+  <h4>New DBZ</h4>
+  <form action="#" class="form-dbz" (ngSubmit)="emitCharacter()">
+    <div class="mb-3">
+      <label for="" class="form-label">Enter the name:</label>
+      <input type="text" name="name" id="" placeholder="Name" class="form-control" [(ngModel)]="character.name" />
+    </div>
+    <div class="mb-3">
+      <label for="" class="form-label">Enter the power:</label>
+      <input type="number" name="power" id="" placeholder="Power" [(ngModel)]="character.power" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+  </form>
+</div>
